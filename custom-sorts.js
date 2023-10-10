@@ -1,21 +1,23 @@
 function ageSort(users) {
-  // Your code here
+  // Sort users by age in ascending order
+  return users.sort((a, b) => a.age - b.age);
 }
 
 function oddEvenSort(arr) {
-  // Your code here
+  return arr.sort((a, b) => (a % 2 === 0) - (b % 2 === 0) || a - b);
 }
 
 function validAnagrams(s, t) {
-  // Your code here
+  const sortStr = str => str.split('').sort().join('');
+  return sortStr(s) === sortStr(t);
 }
 
 function reverseBaseSort(arr) {
-  // Your code here
+
 }
 
 function frequencySort(arr) {
-  // Your code here
+
 }
 
 module.exports = [
